@@ -12,12 +12,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/marcocastignoli/ipds.git"
+    "url": "git+https://github.com/marcocastignoli/typescript-template.git"
   },
   "author": "Marco Castignoli <marco@castignoli.it> (https://castignoli.it/)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/marcocastignoli/ipds/issues"
+    "url": "https://github.com/marcocastignoli/typescript-template/issues"
   },
   "homepage": "https://github.com/marcocastignoli/ipds#readme",
   "devDependencies": {
