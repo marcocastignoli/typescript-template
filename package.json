@@ -1,0 +1,44 @@
+{
+  "name": "typescript-template",
+  "version": "1.0.0",
+  "description": "A blank template for a new typescript project",
+  "main": "index.ts",
+  "scripts": {
+    "commit": "git-cz",
+    "test": "mocha -r ts-node/register test/index.test.ts -w",
+    "test:single": "mocha -r ts-node/register test/index.test.ts",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marcocastignoli/ipds.git"
+  },
+  "author": "Marco Castignoli <marco@castignoli.it> (https://castignoli.it/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/marcocastignoli/ipds/issues"
+  },
+  "homepage": "https://github.com/marcocastignoli/ipds#readme",
+  "devDependencies": {
+    "@types/chai": "^4.0.10",
+    "@types/mocha": "^2.2.44",
+    "@types/typescript": "^2.0.0",
+    "chai": "^4.1.2",
+    "chai-as-promised": "^7.1.1",
+    "commitizen": "^2.9.6",
+    "cz-conventional-changelog": "^2.1.0",
+    "ghooks": "^2.0.2",
+    "i": "^0.3.6",
+    "mocha": "^4.0.1",
+    "semantic-release": "^8.2.0",
+    "ts-node": "^4.0.1"
+  },
+  "config": {
+    "commitizen": {
+      "path": "node_modules/cz-conventional-changelog"
+    },
+    "ghooks": {
+      "pre-commit": "npm run test:single"
+    }
+  }
+}
